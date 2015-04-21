@@ -12,6 +12,10 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 RUN composer config -g github-oauth.github.com e10c7cdc7eb95d4e1f5d34a9e5cc809978c22013
 RUN gem install fpm
 
+RUN apt-get install software-properties-common && \
+    apt-add-repository ppa:ansible/ansible && apt-get update && \
+    apt-get install -y ansible
+
 ADD setup-agent.sh /setup-agent.sh
 RUN apt-get install -y unzip
 RUN useradd -ms /bin/bash teamcity
