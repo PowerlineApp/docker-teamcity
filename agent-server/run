@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+docker run --name teamcity_agent_server -e TEAMCITY_SERVER=http://54.173.108.211:8111 -dt -p 9090:9090 powerline/teamcity-agent-server

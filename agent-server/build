@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+cd "$( dirname "${BASH_SOURCE[0]}" )"
+
+docker build -t powerline/teamcity-agent-server ./
+# docker build --no-cache -t powerline/teamcity-agent-server ./

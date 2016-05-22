@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+docker rm teamcity_agent_android
+docker run --name teamcity_agent_android -e TEAMCITY_SERVER=http://54.173.108.211:8111 -dt -p 9091:9091 powerline/teamcity-agent-android
