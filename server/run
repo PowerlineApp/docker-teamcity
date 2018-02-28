@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-docker run -dt --name teamcity_server -p 8111:8111 -v /opt/teamcity-server:/data/teamcity powerline/teamcity
+docker run -dt --name teamcity_server2 -p 8111:8111 -v /opt/teamcity-server:/data/teamcity powerline/teamcity2

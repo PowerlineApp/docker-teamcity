@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+docker run -dt --name teamcity_server -p 8111:8111 -v /opt/teamcity-server:/data/teamcity powerline/teamcity
